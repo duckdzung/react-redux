@@ -1,11 +1,21 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { useDispatch } from 'react-redux';
+import { createUser } from '../action/actions';
 
 function FormAddNew() {
     const [email, setEmail] = useState("");
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+
+    const dispatch = useDispatch();
+
+    const handleCreateUser = (e) => {
+        e.preventDefault();
+        const user = { email, username, password };
+        dispatch(createUser(user));
+    }
 
     return (
         <Form>
@@ -33,7 +43,7 @@ function FormAddNew() {
                     onChange={(e) => setPassword(e.target.value)}
                 />
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <Button variant="primary" type="submit" onClick={handleCreateUser}>
                 Create
             </Button>
         </Form>

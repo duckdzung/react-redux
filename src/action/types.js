@@ -1,3 +1,20 @@
-export const INCREMENT = 'INCREMENT';
+// Get user
+export const GET_USER_REQUEST = 'GET_USER_REQUEST';
+export const GET_USER_SUCCESS = 'GET_USER_SUCCESS';
+export const GET_USER_ERROR = 'GET_USER_ERROR';
 
-export const DECREMENT = 'DECREMENT';
+// Create user
+export const CREATE_USER_REQUEST = 'CREATE_USER_REQUEST';
+export const CREATE_USER_SUCCESS = 'CREATE_USER_SUCCESS';
+export const CREATE_USER_ERROR = 'CREATE_USER_ERROR';
+
+// Edit user
+export const EDIT_USER_REQUEST = 'EDIT_USER_REQUEST';
+export const EDIT_USER_SUCCESS = 'EDIT_USER_SUCCESS';
+export const EDIT_USER_ERROR = 'EDIT_USER_ERROR';
+
+// Delete user
+export const DELETE_USER_REQUEST = 'DELETE_USER_REQUEST';
+export const DELETE_USER_SUCCESS = 'DELETE_USER_SUCCESS';
+export const DELETE_USER_ERROR = 'DELETE_USER_ERROR';
+

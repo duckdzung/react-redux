@@ -6,13 +6,15 @@ import Container from 'react-bootstrap/Container';
 
 function App() {
   return (
-    <Container>
-      <Header />
-      <hr />
-      <FormAddNew />
-      <hr />
-      <TableUser />
-    </Container>
+    <>
+      <Container>
+        <Header />
+        <hr />
+        <FormAddNew />
+        <hr />
+        <TableUser />
+      </Container>
+    </>
   )
 }
 
